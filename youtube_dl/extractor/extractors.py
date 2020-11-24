@@ -1504,6 +1504,8 @@ from .youtube import (
     YoutubeTruncatedURLIE,
     YoutubeYtUserIE,
     YoutubeWatchLaterIE,
+    YoutubeSearchSubIE,
+    YoutubeSearchSubCCIE,
 )
 from .zapiks import ZapiksIE
 from .zaq1 import Zaq1IE

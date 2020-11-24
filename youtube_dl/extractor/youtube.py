@@ -3341,6 +3341,20 @@ class YoutubeSearchDateIE(YoutubeSearchIE):
     _SEARCH_PARAMS = 'CAI%3D'
 
 
+class YoutubeSearchSubIE(YoutubeSearchIE):
+    IE_NAME = YoutubeSearchIE.IE_NAME + ':sub'
+    _SEARCH_KEY = 'ytsearchsub'
+    IE_DESC = 'YouTube.com search, closed captions'
+    _SEARCH_PARAMS = 'EgQQASgB'
+
+
+class YoutubeSearchSubCCIE(YoutubeSearchIE):
+    IE_NAME = YoutubeSearchIE.IE_NAME + ':subcc'
+    _SEARCH_KEY = 'ytsearchsubcc'
+    IE_DESC = 'YouTube.com search, subtitles and creative commons'
+    _SEARCH_PARAMS = 'EgQoATAB'
+
+
 r"""
 class YoutubeSearchURLIE(YoutubeSearchIE):
     IE_DESC = 'YouTube.com search URLs'
